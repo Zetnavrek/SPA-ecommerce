@@ -1,0 +1,38 @@
+.white > nav {
+    border-bottom-color: black;
+}
+
+#search-items {
+    border-bottom-color: black !important;
+}
+#logo {
+    font-family: 'Hind Vadodara', sans-serif !important;
+}
+
+.row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#lipstick{
+    height: 8vh;
+    width: 2em;
+    
+}
+#portrait {
+    background-image: url("../assets/images/e-beauty.jpg");
+    width: 100%;
+    background-size: cover;
+    height:400px; 
+}
+
+ul> li {
+    display: inline-block;
+}
+
+.products {
+    border: 1px solid black;
+    display : inline-block;
+    height: 30vh;
+}
+    
