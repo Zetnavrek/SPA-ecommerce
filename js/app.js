@@ -7,6 +7,7 @@ $(document).ready( () => {
             let price = item.price;
             let id = item.id;
             $('#elements').append(template(name, image, price));
+            call2(id);
         })
     }
     const template = (name, image, price) => {
@@ -35,19 +36,16 @@ $(document).ready( () => {
         })
     } 
 
-    const printCall2 = (item) => {
-        let name = item.name;
-        let image = item.image;
-        let price = item.price;
-        let id = item.id;
-        call2(id);
-        $('#modal1').append(template2(name, image, price));
-        console.log(printCall2);
-    }
-    $('#button2').click ((event) => {
-        event.preventDefault();
-        console.log('boton click');
+    // const printCall2 = (item) => {
+
+    //     $('#modal1').append(template2(name, image, price));
+    //     console.log(printCall2);
+    // }
+    
         const call2 = (id) => {
+            $('#button2').click ((event) => {
+                event.preventDefault();
+                console.log('boton click');
         $.ajax({
             url:`https://api.mercadolibre.com/items/${id}`,         
             type: 'GET',
@@ -56,11 +54,10 @@ $(document).ready( () => {
         })
         .done ((response) => {
             console.log(response); 
-            //printCall2(response.id);
+            //printCall2(response);
         })
-    } 
-
-    });
+    })
+    }
     const template2 = (name,image,price) => {
         let q =`<div id= "modal1" class="modal-content">
                 <h4>${name}</h4>
