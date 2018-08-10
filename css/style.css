@@ -2,8 +2,9 @@
     border-bottom-color: black;
 }
 
-#search-items {
+#search-item {
     border-bottom-color: black !important;
+    border: 1px solid black;
 }
 #logo {
     font-family: 'Hind Vadodara', sans-serif !important;
@@ -16,7 +17,7 @@
 
 #lipstick{
     height: 8vh;
-    width: 2em;
+    width: 1em;
     
 }
 #portrait {
@@ -35,4 +36,10 @@ ul> li {
     display : inline-block;
     height: 30vh;
 }
-    
+
+#elements > p {
+    width: 5em;
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+}
